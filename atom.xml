@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.lvphp.com/"/>
-  <updated>2016-11-24T09:47:55.038Z</updated>
+  <updated>2016-11-24T09:49:15.592Z</updated>
   <id>http://www.lvphp.com/</id>
   
   <author>
@@ -16,11 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>[object Object]</title>
+    <title>ABOUT</title>
     <link href="http://www.lvphp.com/2016/11/24/about/"/>
     <id>http://www.lvphp.com/2016/11/24/about/</id>
     <published>2016-11-24T09:43:28.995Z</published>
-    <updated>2016-11-24T09:47:55.038Z</updated>
+    <updated>2016-11-24T09:49:15.592Z</updated>
     
     <content type="html"><![CDATA[<h4 id="运行服务器"><a href="#运行服务器" class="headerlink" title="运行服务器"></a>运行服务器</h4><ul>
 <li>执行new命令  </li>
