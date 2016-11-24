@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.lvphp.com/"/>
-  <updated>2016-11-24T09:49:15.592Z</updated>
+  <updated>2016-11-24T09:52:44.242Z</updated>
   <id>http://www.lvphp.com/</id>
   
   <author>
@@ -20,9 +20,10 @@
     <link href="http://www.lvphp.com/2016/11/24/about/"/>
     <id>http://www.lvphp.com/2016/11/24/about/</id>
     <published>2016-11-24T09:43:28.995Z</published>
-    <updated>2016-11-24T09:49:15.592Z</updated>
+    <updated>2016-11-24T09:52:44.242Z</updated>
     
-    <content type="html"><![CDATA[<h4 id="运行服务器"><a href="#运行服务器" class="headerlink" title="运行服务器"></a>运行服务器</h4><ul>
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h4 id="运行服务器"><a href="#运行服务器" class="headerlink" title="运行服务器"></a>运行服务器</h4><ul>
 <li>执行new命令  </li>
 <li>生成指定名称的文章  </li>
 <li>hexo\source_posts\postName.md。  </li>
@@ -31,10 +32,7 @@
     
     <summary type="html">
     
-      &lt;h4 id=&quot;运行服务器&quot;&gt;&lt;a href=&quot;#运行服务器&quot; class=&quot;headerlink&quot; title=&quot;运行服务器&quot;&gt;&lt;/a&gt;运行服务器&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;执行new命令  &lt;/li&gt;
-&lt;li&gt;生成指定名称的文章  &lt;/li&gt;
-&lt;li&gt;hexo\source_
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
     
     </summary>
     
