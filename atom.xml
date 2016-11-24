@@ -4,9 +4,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="http://www.lvphp.com/"/>
   <updated>2016-11-24T08:48:21.886Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://www.lvphp.com/</id>
   
   <author>
     <name>John Doe</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2016/11/24/hello-world/"/>
-    <id>http://yoursite.com/2016/11/24/hello-world/</id>
+    <link href="http://www.lvphp.com/2016/11/24/hello-world/"/>
+    <id>http://www.lvphp.com/2016/11/24/hello-world/</id>
     <published>2016-11-24T08:48:21.879Z</published>
     <updated>2016-11-24T08:48:21.886Z</updated>
     
