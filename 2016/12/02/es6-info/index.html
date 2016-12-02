@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="js,es6," />
 
 
 
@@ -86,12 +86,16 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="LVPHP">
-<meta property="og:url" content="http://www.lvphp.com/index.html">
+<meta name="description" content="使用拓展运算符 … 复制数组123456&quot;use strict&quot;const items = [1,2,3,4]const itemscopy = [...items]console.log(itemscopy); //note out: [ 1, 2, 3, 4 ]itemscopy[0] = 6;console.log(items, itemscopy); //note out: [ 1, 2,">
+<meta property="og:type" content="article">
+<meta property="og:title" content="es6-info">
+<meta property="og:url" content="http://www.lvphp.com/2016/12/02/es6-info/index.html">
 <meta property="og:site_name" content="LVPHP">
+<meta property="og:description" content="使用拓展运算符 … 复制数组123456&quot;use strict&quot;const items = [1,2,3,4]const itemscopy = [...items]console.log(itemscopy); //note out: [ 1, 2, 3, 4 ]itemscopy[0] = 6;console.log(items, itemscopy); //note out: [ 1, 2,">
+<meta property="og:updated_time" content="2016-12-02T14:48:21.226Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="LVPHP">
+<meta name="twitter:title" content="es6-info">
+<meta name="twitter:description" content="使用拓展运算符 … 复制数组123456&quot;use strict&quot;const items = [1,2,3,4]const itemscopy = [...items]console.log(itemscopy); //note out: [ 1, 2, 3, 4 ]itemscopy[0] = 6;console.log(items, itemscopy); //note out: [ 1, 2,">
 
 
 
@@ -119,13 +123,13 @@
 
 
 
-  <link rel="canonical" href="http://www.lvphp.com/"/>
+  <link rel="canonical" href="http://www.lvphp.com/2016/12/02/es6-info/"/>
 
 
 
 
 
-  <title> LVPHP </title>
+  <title> es6-info | LVPHP </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -146,9 +150,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -227,9 +229,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -262,10 +264,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2016/12/02/es6-info/" itemprop="url">
-                  es6-info
-                </a>
+                es6-info
               
             
           </h1>
@@ -314,9 +313,7 @@
       
 
       
-        
-          
-            <h4 id="使用拓展运算符-…-复制数组"><a href="#使用拓展运算符-…-复制数组" class="headerlink" title="使用拓展运算符 … 复制数组"></a>使用拓展运算符 … 复制数组</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="meta">"use strict"</span></div><div class="line"><span class="keyword">const</span> items = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>]</div><div class="line"><span class="keyword">const</span> itemscopy = [...items]</div><div class="line"><span class="built_in">console</span>.log(itemscopy); <span class="comment">//note out: [ 1, 2, 3, 4 ]</span></div><div class="line">itemscopy[<span class="number">0</span>] = <span class="number">6</span>;</div><div class="line"><span class="built_in">console</span>.log(items, itemscopy); <span class="comment">//note out: [ 1, 2, 3, 4 ] [ 6, 2, 3, 4 ]</span></div></pre></td></tr></table></figure>
+        <h4 id="使用拓展运算符-…-复制数组"><a href="#使用拓展运算符-…-复制数组" class="headerlink" title="使用拓展运算符 … 复制数组"></a>使用拓展运算符 … 复制数组</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="meta">"use strict"</span></div><div class="line"><span class="keyword">const</span> items = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>]</div><div class="line"><span class="keyword">const</span> itemscopy = [...items]</div><div class="line"><span class="built_in">console</span>.log(itemscopy); <span class="comment">//note out: [ 1, 2, 3, 4 ]</span></div><div class="line">itemscopy[<span class="number">0</span>] = <span class="number">6</span>;</div><div class="line"><span class="built_in">console</span>.log(items, itemscopy); <span class="comment">//note out: [ 1, 2, 3, 4 ] [ 6, 2, 3, 4 ]</span></div></pre></td></tr></table></figure>
 <h4 id="使用解构存取和使用多属性对象"><a href="#使用解构存取和使用多属性对象" class="headerlink" title="使用解构存取和使用多属性对象"></a>使用解构存取和使用多属性对象</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="meta">"use strict"</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">getFullName</span>(<span class="params">obj</span>) </span>&#123;</div><div class="line">    <span class="keyword">const</span> &#123; firstName, lastName &#125; = obj;</div><div class="line">    <span class="keyword">return</span> <span class="string">`<span class="subst">$&#123;firstName&#125;</span> <span class="subst">$&#123;lastName&#125;</span>`</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">let</span> str = getFullName(&#123;<span class="attr">firstName</span>:<span class="string">"wangbo"</span>, <span class="attr">lastName</span>:<span class="string">"bo"</span>, <span class="attr">age</span>:<span class="number">30</span>&#125;);</div><div class="line"><span class="built_in">console</span>.log(str); <span class="comment">//note out: wangbo bo</span></div></pre></td></tr></table></figure>
 <h4 id="对数组使用解构赋值"><a href="#对数组使用解构赋值" class="headerlink" title="对数组使用解构赋值"></a>对数组使用解构赋值</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">"use strict"</span></div><div class="line"><span class="keyword">const</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>];</div><div class="line"><span class="keyword">const</span> [first, second] = arr;</div><div class="line"><span class="built_in">console</span>.log(first, second); <span class="comment">//note out: 1 2</span></div></pre></td></tr></table></figure>
 <h4 id="需要回传多个值时，使用对象解构，而不是数组解构"><a href="#需要回传多个值时，使用对象解构，而不是数组解构" class="headerlink" title="需要回传多个值时，使用对象解构，而不是数组解构"></a>需要回传多个值时，使用对象解构，而不是数组解构</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="meta">"use strict"</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">processInput</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> &#123;<span class="attr">left</span>: <span class="number">10</span>, <span class="attr">right</span>: <span class="number">20</span>, <span class="attr">top</span>: <span class="number">30</span>, <span class="attr">bottom</span>: <span class="number">40</span>&#125;;</div><div class="line">&#125;</div><div class="line"><span class="keyword">const</span> &#123; top, left &#125; = processInput();</div><div class="line"><span class="built_in">console</span>.log(top, left); <span class="comment">//note out: 30 10</span></div></pre></td></tr></table></figure>
@@ -324,405 +321,64 @@
 <h4 id="函数的参数指定默认值"><a href="#函数的参数指定默认值" class="headerlink" title="函数的参数指定默认值"></a>函数的参数指定默认值</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">"use strict"</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">handleThings</span>(<span class="params">opts = &#123;&#125;</span>) </span>&#123;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h4 id="使用箭头函数符号"><a href="#使用箭头函数符号" class="headerlink" title="使用箭头函数符号"></a>使用箭头函数符号</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="meta">"use strict"</span></div><div class="line"><span class="keyword">const</span> items = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>];</div><div class="line"><span class="keyword">let</span> tmp = items.map(<span class="function">(<span class="params">x</span>)=&gt;</span>&#123;<span class="keyword">return</span> x*x;&#125;);</div><div class="line"><span class="built_in">console</span>.log(tmp); <span class="comment">//note out: [ 1, 4, 9, 16 ]</span></div><div class="line"><span class="keyword">let</span> arr = items.map(<span class="function"><span class="params">x</span> =&gt;</span> x * x);</div><div class="line"><span class="built_in">console</span>.log(arr); <span class="comment">//note out: [ 1, 4, 9, 16 ]</span></div></pre></td></tr></table></figure>
 
-          
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
 
     <footer class="post-footer">
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://www.lvphp.com/2016/12/02/git-stash/">
-
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="wangbo">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.jpg">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="LVPHP">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="LVPHP" src="">
-    </span>
-  </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/12/02/git-stash/" itemprop="url">
-                  git-stash
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-12-02T18:02:38+08:00">
-                2016-12-02
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/js/" rel="tag"># js</a>
           
-            
+            <a href="/tags/es6/" rel="tag"># es6</a>
           
-
-          
-
-          
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <h4 id="应用场合"><a href="#应用场合" class="headerlink" title="应用场合"></a>应用场合</h4><p>branch_A分支的工作区内容已被修改，但是并未完成。这时需要立即切换到另外一个分支branch_B上去，可是又不想提交目前的修改，因为修改没有完成。但是，不提交的话，又没有办法checkout到前面的分支。<br>此时用Git Stash就相当于备份工作区了。然后再Checkout到branch_B去修改，就能够达到保存当前工作区被修改过的内容，并及时恢复的作用。</p>
-<h4 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h4><ul>
-<li>git stash 备份当前的工作区的内容，从最近的一次提交中读取相关内容，让工作区保证和上次提交的内容一致。同时，将当前的工作区内容保存到Git栈中;</li>
-<li>git stash apply 把栈里面记录的内容运用到当前的版本上，这时候栈里面的记录还保存着;</li>
-<li>git stash pop 从Git栈中读取最近一次保存的内容，恢复工作区的相关内容。由于可能存在多个Stash的内容，所以用栈来管理，pop会从最近的一个stash中读取内容并恢复， pop后栈中不再存在该记录;</li>
-<li>git stash list 显示Git栈内的所有备份，可以利用这个列表来决定从那个地方恢复;</li>
-<li>git stash clear 清空Git栈,此时使用gitg等图形化工具会发现，原来stash的哪些节点都消失了;</li>
-</ul>
-<h4 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h4><p>在不同分支执行git stash 命令会将修改保存在同一个栈中，<br><strong>例如</strong></p>
-<ol>
-<li>在copy_master分支执行 git stash, 这时候stash 栈中有一个stash@{0}  </li>
-<li>在sonar分支执行 git stash, 这时候stash 栈中会再放进一个stash@{1}  </li>
-<li>执行git stash list命令，输出：<br>stash@{0}: WIP on copy_master: 2923b6d Merge branch ‘master’ into copy_master<br>stash@{1}: WIP on sonar: c2c677b Merge branch ‘master’ into sonar  </li>
-</ol>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://www.lvphp.com/2016/11/24/about/">
-
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="wangbo">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.jpg">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="LVPHP">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="LVPHP" src="">
-    </span>
-  </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/12/02/git-stash/" rel="next" title="git-stash">
+                <i class="fa fa-chevron-left"></i> git-stash
+              </a>
             
-              
-                
-                <a class="post-title-link" href="/2016/11/24/about/" itemprop="url">
-                  ABOUT
-                </a>
-              
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-11-24T17:43:28+08:00">
-                2016-11-24
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <h4 id="ABOUT"><a href="#ABOUT" class="headerlink" title="ABOUT"></a>ABOUT</h4><p>日常的一些记录~~</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://www.lvphp.com/2016/11/24/hello-world/">
-
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="wangbo">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.jpg">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="LVPHP">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="LVPHP" src="">
-    </span>
-  </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/11/24/hello-world/" itemprop="url">
-                  初试Hexo
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-11-24T16:48:21+08:00">
-                2016-11-24
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Hexo官网网站：<a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>，文档：<a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a></p>
-<h2 id="使用命令"><a href="#使用命令" class="headerlink" title="使用命令"></a>使用命令</h2><h3 id="创建新文章"><a href="#创建新文章" class="headerlink" title="创建新文章"></a>创建新文章</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new  name</div></pre></td></tr></table></figure>
-<h3 id="本地预览"><a href="#本地预览" class="headerlink" title="本地预览"></a>本地预览</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<h3 id="发布"><a href="#发布" class="headerlink" title="发布"></a>发布</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-
-          
-        
+    <div class="post-spread">
       
     </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-  </section>
-
-  
+  </div>
 
 
           </div>
@@ -730,6 +386,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -749,8 +409,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.jpg"
@@ -828,6 +497,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#使用拓展运算符-…-复制数组"><span class="nav-number">1.</span> <span class="nav-text">使用拓展运算符 … 复制数组</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#使用解构存取和使用多属性对象"><span class="nav-number">2.</span> <span class="nav-text">使用解构存取和使用多属性对象</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#对数组使用解构赋值"><span class="nav-number">3.</span> <span class="nav-text">对数组使用解构赋值</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#需要回传多个值时，使用对象解构，而不是数组解构"><span class="nav-number">4.</span> <span class="nav-text">需要回传多个值时，使用对象解构，而不是数组解构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#程序化生成字符串时，使用模板字符串代替字符串连接"><span class="nav-number">5.</span> <span class="nav-text">程序化生成字符串时，使用模板字符串代替字符串连接</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#函数的参数指定默认值"><span class="nav-number">6.</span> <span class="nav-text">函数的参数指定默认值</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#使用箭头函数符号"><span class="nav-number">7.</span> <span class="nav-text">使用箭头函数符号</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
     </div>
@@ -926,6 +611,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
 
   
 
