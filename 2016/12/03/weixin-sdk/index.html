@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="git,git-stash," />
+  <meta name="keywords" content="微信,weixin,js,sdk," />
 
 
 
@@ -86,22 +86,19 @@
 
 
 
-<meta name="description" content="应用场合branch_A分支的工作区内容已被修改，但是并未完成。这时需要立即切换到另外一个分支branch_B上去，可是又不想提交目前的修改，因为修改没有完成。但是，不提交的话，又没有办法checkout到前面的分支。此时用Git Stash就相当于备份工作区了。然后再Checkout到branch_B去修改，就能够达到保存当前工作区被修改过的内容，并及时恢复的作用。
-用法
-git stash 备">
+<meta name="description" content="引入微信JS文件1&amp;lt;script type=&quot;text/javascript&quot; src=&quot;https://res.wx.qq.com/open/js/jweixin-1.1.0.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
+获取access_token1$access_info = file_get_contents(&quot;https://api.weixin.qq.com/cgi-bin/to">
 <meta property="og:type" content="article">
-<meta property="og:title" content="git-stash">
-<meta property="og:url" content="http://www.lvphp.com/2016/12/02/git-stash/index.html">
+<meta property="og:title" content="微信JS SDK">
+<meta property="og:url" content="http://www.lvphp.com/2016/12/03/weixin-sdk/index.html">
 <meta property="og:site_name" content="LVPHP">
-<meta property="og:description" content="应用场合branch_A分支的工作区内容已被修改，但是并未完成。这时需要立即切换到另外一个分支branch_B上去，可是又不想提交目前的修改，因为修改没有完成。但是，不提交的话，又没有办法checkout到前面的分支。此时用Git Stash就相当于备份工作区了。然后再Checkout到branch_B去修改，就能够达到保存当前工作区被修改过的内容，并及时恢复的作用。
-用法
-git stash 备">
-<meta property="og:updated_time" content="2016-12-02T10:08:48.372Z">
+<meta property="og:description" content="引入微信JS文件1&amp;lt;script type=&quot;text/javascript&quot; src=&quot;https://res.wx.qq.com/open/js/jweixin-1.1.0.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
+获取access_token1$access_info = file_get_contents(&quot;https://api.weixin.qq.com/cgi-bin/to">
+<meta property="og:updated_time" content="2016-12-03T03:46:48.366Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="git-stash">
-<meta name="twitter:description" content="应用场合branch_A分支的工作区内容已被修改，但是并未完成。这时需要立即切换到另外一个分支branch_B上去，可是又不想提交目前的修改，因为修改没有完成。但是，不提交的话，又没有办法checkout到前面的分支。此时用Git Stash就相当于备份工作区了。然后再Checkout到branch_B去修改，就能够达到保存当前工作区被修改过的内容，并及时恢复的作用。
-用法
-git stash 备">
+<meta name="twitter:title" content="微信JS SDK">
+<meta name="twitter:description" content="引入微信JS文件1&amp;lt;script type=&quot;text/javascript&quot; src=&quot;https://res.wx.qq.com/open/js/jweixin-1.1.0.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
+获取access_token1$access_info = file_get_contents(&quot;https://api.weixin.qq.com/cgi-bin/to">
 
 
 
@@ -129,13 +126,13 @@ git stash 备">
 
 
 
-  <link rel="canonical" href="http://www.lvphp.com/2016/12/02/git-stash/"/>
+  <link rel="canonical" href="http://www.lvphp.com/2016/12/03/weixin-sdk/"/>
 
 
 
 
 
-  <title> git-stash | LVPHP </title>
+  <title> 微信JS SDK | LVPHP </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -246,7 +243,7 @@ git stash 备">
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://www.lvphp.com/2016/12/02/git-stash/">
+  <link itemprop="mainEntityOfPage" href="http://www.lvphp.com/2016/12/03/weixin-sdk/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="wangbo">
@@ -270,7 +267,7 @@ git stash 备">
             
             
               
-                git-stash
+                微信JS SDK
               
             
           </h1>
@@ -283,8 +280,8 @@ git stash 备">
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-12-02T18:02:38+08:00">
-                2016-12-02
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-12-03T11:17:56+08:00">
+                2016-12-03
               </time>
             
 
@@ -319,20 +316,22 @@ git stash 备">
       
 
       
-        <h4 id="应用场合"><a href="#应用场合" class="headerlink" title="应用场合"></a>应用场合</h4><p>branch_A分支的工作区内容已被修改，但是并未完成。这时需要立即切换到另外一个分支branch_B上去，可是又不想提交目前的修改，因为修改没有完成。但是，不提交的话，又没有办法checkout到前面的分支。<br>此时用Git Stash就相当于备份工作区了。然后再Checkout到branch_B去修改，就能够达到保存当前工作区被修改过的内容，并及时恢复的作用。</p>
-<h4 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h4><ul>
-<li>git stash 备份当前的工作区的内容，从最近的一次提交中读取相关内容，让工作区保证和上次提交的内容一致。同时，将当前的工作区内容保存到Git栈中;</li>
-<li>git stash apply 把栈里面记录的内容运用到当前的版本上，这时候栈里面的记录还保存着;</li>
-<li>git stash pop 从Git栈中读取最近一次保存的内容，恢复工作区的相关内容。由于可能存在多个Stash的内容，所以用栈来管理，pop会从最近的一个stash中读取内容并恢复， pop后栈中不再存在该记录;</li>
-<li>git stash list 显示Git栈内的所有备份，可以利用这个列表来决定从那个地方恢复;</li>
-<li>git stash clear 清空Git栈,此时使用gitg等图形化工具会发现，原来stash的哪些节点都消失了;</li>
+        <h4 id="引入微信JS文件"><a href="#引入微信JS文件" class="headerlink" title="引入微信JS文件"></a>引入微信JS文件</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;script type=<span class="string">"text/javascript"</span> src=<span class="string">"https://res.wx.qq.com/open/js/jweixin-1.1.0.js"</span>&gt;&lt;/script&gt;</div></pre></td></tr></table></figure>
+<h4 id="获取access-token"><a href="#获取access-token" class="headerlink" title="获取access_token"></a>获取access_token</h4><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$access_info = file_get_contents(<span class="string">"https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&amp;appid=APPID&amp;secret=APPSECRET"</span>);</div></pre></td></tr></table></figure>
+<p>正常情况下，微信会返回下述JSON数据包给公众号：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&#123;&quot;access_token&quot;:&quot;ACCESS_TOKEN&quot;,&quot;expires_in&quot;:7200&#125;</div></pre></td></tr></table></figure></p>
+<p>错误时微信会返回错误码等信息，JSON数据包示例如下（该示例为AppID无效错误）:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&#123;&quot;errcode&quot;:40013,&quot;errmsg&quot;:&quot;invalid appid&quot;&#125;</div></pre></td></tr></table></figure></p>
+<p><strong>注意</strong><br>获取access_token有频次限制，获取的access_token需要在做缓存  </p>
+<h4 id="获取jsapi-ticket"><a href="#获取jsapi-ticket" class="headerlink" title="获取jsapi_ticket"></a>获取jsapi_ticket</h4><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ticket_info = file_get_contents(<span class="string">"https://api.weixin.qq.com/cgi-bin/ticket/getticket?access_token=ACCESS_TOKEN&amp;type=jsapi"</span>);</div></pre></td></tr></table></figure>
+<p>成功返回如下JSON：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line"><span class="string">"errcode"</span>:<span class="number">0</span>,</div><div class="line"><span class="string">"errmsg"</span>:<span class="string">"ok"</span>,</div><div class="line"><span class="string">"ticket"</span>:<span class="string">"bxLdikRXVbTPdHSM05e5u5sUoXNKd8-41ZO3MhKoyN5OfkWITDGgnr2fwJ0m9E8NYzWKVZvdVtaUgWvsdshFKA"</span>,</div><div class="line"><span class="string">"expires_in"</span>:<span class="number">7200</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p><strong>注意</strong><br>获取jsapi_ticket有频次限制，获取的jsapi_ticket需要在做缓存</p>
+<h4 id="计算签名"><a href="#计算签名" class="headerlink" title="计算签名"></a>计算签名</h4><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$signature = sha1(<span class="string">"jsapi_ticket=sM4AOVdWfPE4DxkXGEs8VMCPGGVi4C3VM0P37wVUCFvkVAy_90u5h9nbSlYy3-Sl-HhTdfl2fzFy1AOcHKP7qg&amp;noncestr=Wm3WZYTPz0wzccnW&amp;timestamp=1414587457&amp;url=http://mp.weixin.qq.com?params=value"</span>)</div></pre></td></tr></table></figure>
+<ul>
+<li>jsapi_ticket: 获取的jsapi_ticket</li>
+<li>noncestr: 随机串</li>
+<li>timestamp: 时间戳</li>
+<li>url: 当前网页的URL，不包含#及其后面部分</li>
 </ul>
-<h4 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h4><p>在不同分支执行git stash 命令会将修改保存在同一个栈中，<br><strong>例如</strong></p>
-<ol>
-<li>在copy_master分支执行 git stash, 这时候stash 栈中有一个stash@{0}  </li>
-<li>在sonar分支执行 git stash, 这时候stash 栈中会再放进一个stash@{1}  </li>
-<li>执行git stash list命令，输出：<br>stash@{0}: WIP on copy_master: 2923b6d Merge branch ‘master’ into copy_master<br>stash@{1}: WIP on sonar: c2c677b Merge branch ‘master’ into sonar  </li>
-</ol>
+<h4 id="调用SDK"><a href="#调用SDK" class="headerlink" title="调用SDK"></a>调用SDK</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">wx.config(&#123;</div><div class="line">    <span class="attr">debug</span>: <span class="literal">true</span>, <span class="comment">// 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。</span></div><div class="line">    appId: <span class="string">'wx1a1bba241ca4cce5'</span>, <span class="comment">// 必填，公众号的唯一标识</span></div><div class="line">    timestamp: <span class="number">1428980719</span>, <span class="comment">// 必填，生成签名的时间戳</span></div><div class="line">    nonceStr: <span class="string">'Wm3WZYTPz0wzccnW'</span>, <span class="comment">// 必填，生成签名的随机串</span></div><div class="line">    signature: <span class="string">'2c3b0863b61fe7cc37961d7ce3ce71dc1d7360a8'</span>,<span class="comment">// 必填，签名，见附录1</span></div><div class="line">    jsApiList: [<span class="string">"previewImage"</span>] <span class="comment">// 必填，需要使用的JS接口列表，所有JS接口列表见附录2</span></div><div class="line">&#125;);</div><div class="line">wx.ready(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    $(<span class="string">".img"</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">        wx.previewImage(&#123;</div><div class="line">            <span class="attr">current</span>: <span class="string">'http://apps.sinaapp.com/app/screen.jpeg'</span>, <span class="comment">// 当前显示的图片链接</span></div><div class="line">            urls: [<span class="string">'http://apps.sinaapp.com/app/link.png'</span>, <span class="string">'http://apps.sinaapp.com/app/search.png'</span>, <span class="string">'http://apps.sinaapp.com/app/searchn.png'</span>] <span class="comment">// 需要预览的图片链接列表</span></div><div class="line">        &#125;);</div><div class="line">    &#125;);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
 
       
     </div>
@@ -356,9 +355,13 @@ git stash 备">
       
         <div class="post-tags">
           
-            <a href="/tags/git/" rel="tag"># git</a>
+            <a href="/tags/微信/" rel="tag"># 微信</a>
           
-            <a href="/tags/git-stash/" rel="tag"># git-stash</a>
+            <a href="/tags/weixin/" rel="tag"># weixin</a>
+          
+            <a href="/tags/js/" rel="tag"># js</a>
+          
+            <a href="/tags/sdk/" rel="tag"># sdk</a>
           
         </div>
       
@@ -367,8 +370,8 @@ git stash 备">
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/11/24/about/" rel="next" title="ABOUT">
-                <i class="fa fa-chevron-left"></i> ABOUT
+              <a href="/2016/12/02/es6-info/" rel="next" title="ES6-info">
+                <i class="fa fa-chevron-left"></i> ES6-info
               </a>
             
           </div>
@@ -376,10 +379,6 @@ git stash 备">
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/12/02/es6-info/" rel="prev" title="ES6-info">
-                ES6-info <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -524,7 +523,7 @@ git stash 备">
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#应用场合"><span class="nav-number">1.</span> <span class="nav-text">应用场合</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#用法"><span class="nav-number">2.</span> <span class="nav-text">用法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#注意"><span class="nav-number">3.</span> <span class="nav-text">注意</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#引入微信JS文件"><span class="nav-number">1.</span> <span class="nav-text">引入微信JS文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#获取access-token"><span class="nav-number">2.</span> <span class="nav-text">获取access_token</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#获取jsapi-ticket"><span class="nav-number">3.</span> <span class="nav-text">获取jsapi_ticket</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#计算签名"><span class="nav-number">4.</span> <span class="nav-text">计算签名</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#调用SDK"><span class="nav-number">5.</span> <span class="nav-text">调用SDK</span></a></li></ol></div>
             
 
           </div>
