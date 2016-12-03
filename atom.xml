@@ -146,28 +146,6 @@
   </entry>
   
   <entry>
-    <title>ABOUT</title>
-    <link href="http://www.lvphp.com/2016/11/24/about/"/>
-    <id>http://www.lvphp.com/2016/11/24/about/</id>
-    <published>2016-11-24T09:43:28.995Z</published>
-    <updated>2016-12-02T09:59:41.733Z</updated>
-    
-    <content type="html"><![CDATA[<h4 id="ABOUT"><a href="#ABOUT" class="headerlink" title="ABOUT"></a>ABOUT</h4><p>日常的一些记录~~</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h4 id=&quot;ABOUT&quot;&gt;&lt;a href=&quot;#ABOUT&quot; class=&quot;headerlink&quot; title=&quot;ABOUT&quot;&gt;&lt;/a&gt;ABOUT&lt;/h4&gt;&lt;p&gt;日常的一些记录~~&lt;/p&gt;
-
-    
-    </summary>
-    
-    
-      <category term="about" scheme="http://www.lvphp.com/tags/about/"/>
-    
-  </entry>
-  
-  <entry>
     <title>初试Hexo</title>
     <link href="http://www.lvphp.com/2016/11/24/hello-world/"/>
     <id>http://www.lvphp.com/2016/11/24/hello-world/</id>
