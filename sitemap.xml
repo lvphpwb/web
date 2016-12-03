@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.lvphp.com/2016/12/03/file-get-contents/</loc>
+    
+    <lastmod>2016-12-03T04:05:28.217Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.lvphp.com/2016/12/03/weixin-sdk/</loc>
     
     <lastmod>2016-12-03T03:46:48.366Z</lastmod>
