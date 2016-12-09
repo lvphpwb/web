@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.lvphp.com/"/>
-  <updated>2016-12-09T07:40:18.020Z</updated>
+  <updated>2016-12-09T09:36:58.779Z</updated>
   <id>http://www.lvphp.com/</id>
   
   <author>
@@ -14,6 +14,44 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>zimg imageserver</title>
+    <link href="http://www.lvphp.com/2016/12/09/zimg-imgserver/"/>
+    <id>http://www.lvphp.com/2016/12/09/zimg-imgserver/</id>
+    <published>2016-12-09T09:15:21.000Z</published>
+    <updated>2016-12-09T09:36:58.779Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h4><p>zimg是<a href="http://blog.buaa.us/" target="_blank" rel="external">@招牌疯子</a>开源的一个图片存储程序，主要的优点是可以根据请求实时处理图片，并且进行压缩和存储，一是方便前端用户，二来降低流量。</p>
+<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><h5 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a>安装依赖</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo yum install openssl-devel cmake libevent-devel libjpeg-devel giflib-devel libpng-devel libwebp-devel ImageMagick-devel libmemcached-devel</div></pre></td></tr></table></figure>
+<h4 id="安装zimg"><a href="#安装zimg" class="headerlink" title="安装zimg"></a>安装zimg</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$ git <span class="built_in">clone</span> https://github.com/buaazp/zimg -b master --depth=1</div><div class="line">$ <span class="built_in">cd</span> zimg</div><div class="line">$ make</div><div class="line">$ <span class="built_in">cd</span> bin</div><div class="line">$ ./zimg conf/zimg.lua</div></pre></td></tr></table></figure>
+<h4 id="zimg配置文件"><a href="#zimg配置文件" class="headerlink" title="zimg配置文件"></a>zimg配置文件</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">--zimg server config</div><div class="line"></div><div class="line">--server config</div><div class="line">--是否后台运行</div><div class="line">is_daemon	= 1</div><div class="line">--绑定IP</div><div class="line">ip              = <span class="string">'0.0.0.0'</span></div><div class="line">--端口</div><div class="line">port            = 4869</div><div class="line">--运行线程数，默认值为服务器CPU数</div><div class="line">--thread_num    = 4</div><div class="line">backlog_num     = 1024</div><div class="line">max_keepalives  = 1</div><div class="line">retry           = 3</div><div class="line">system          = io.popen(<span class="string">'uname -sn'</span>):<span class="built_in">read</span>(<span class="string">'*l'</span>)</div><div class="line"><span class="built_in">pwd</span>             = io.popen(<span class="string">'pwd'</span>):<span class="built_in">read</span>(<span class="string">'*l'</span>)</div><div class="line"></div><div class="line">--header config</div><div class="line">--返回时所带的HTTP header</div><div class="line">headers         = <span class="string">'Cache-Control:max-age=7776000'</span></div><div class="line">--是否启用etag缓存</div><div class="line">etag            = 1</div></pre></td></tr></table></figure>
+<p>默认使用4869端口，打开地址<code>http://{ip}:4869/</code>就可以上传图片了</p>
+<h4 id="图片自定义处理"><a href="#图片自定义处理" class="headerlink" title="图片自定义处理"></a>图片自定义处理</h4><p><code>http://demo.buaa.us/5f189d8ec57f5a5a0d3dcba47fa797e2?w=500&amp;h=500&amp;g=0&amp;x=0&amp;y=0&amp;r=45&amp;q=75&amp;f=jpeg</code><br><strong>说明</strong></p>
+<ul>
+<li>w:图片宽度</li>
+<li>h:图片高度</li>
+<li>g:g=1为转黑白色</li>
+<li>x:裁剪的开始位置X坐标</li>
+<li>y:裁剪的开始位置Y坐标</li>
+<li>r:旋转角度</li>
+<li>q:图片质量</li>
+<li>f:输出格式</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h4&gt;&lt;p&gt;zimg是&lt;a href=&quot;http://blog.buaa.us/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;@招牌
+    
+    </summary>
+    
+    
+      <category term="zimg" scheme="http://www.lvphp.com/tags/zimg/"/>
+    
+      <category term="图片存储" scheme="http://www.lvphp.com/tags/%E5%9B%BE%E7%89%87%E5%AD%98%E5%82%A8/"/>
+    
+  </entry>
   
   <entry>
     <title>使用php扩展trie_filter，利用词库，过滤敏感词</title>

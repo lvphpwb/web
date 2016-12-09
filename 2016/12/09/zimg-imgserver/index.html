@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="js,es6," />
+  <meta name="keywords" content="zimg,图片存储," />
 
 
 
@@ -86,16 +86,19 @@
 
 
 
-<meta name="description" content="使用拓展运算符 … 复制数组123456&quot;use strict&quot;const items = [1,2,3,4]const itemscopy = [...items]console.log(itemscopy); //note out: [ 1, 2, 3, 4 ]itemscopy[0] = 6;console.log(items, itemscopy); //note out: [ 1, 2,">
+<meta name="description" content="介绍zimg是@招牌疯子开源的一个图片存储程序，主要的优点是可以根据请求实时处理图片，并且进行压缩和存储，一是方便前端用户，二来降低流量。
+安装安装依赖1$ sudo yum install openssl-devel cmake libevent-devel libjpeg-devel giflib-devel libpng-devel libwebp-devel ImageMagick-dev">
 <meta property="og:type" content="article">
-<meta property="og:title" content="ES6-info">
-<meta property="og:url" content="http://www.lvphp.com/2016/12/02/es6-info/index.html">
+<meta property="og:title" content="zimg imageserver">
+<meta property="og:url" content="http://www.lvphp.com/2016/12/09/zimg-imgserver/index.html">
 <meta property="og:site_name" content="LVPHP">
-<meta property="og:description" content="使用拓展运算符 … 复制数组123456&quot;use strict&quot;const items = [1,2,3,4]const itemscopy = [...items]console.log(itemscopy); //note out: [ 1, 2, 3, 4 ]itemscopy[0] = 6;console.log(items, itemscopy); //note out: [ 1, 2,">
-<meta property="og:updated_time" content="2016-12-02T14:54:39.681Z">
+<meta property="og:description" content="介绍zimg是@招牌疯子开源的一个图片存储程序，主要的优点是可以根据请求实时处理图片，并且进行压缩和存储，一是方便前端用户，二来降低流量。
+安装安装依赖1$ sudo yum install openssl-devel cmake libevent-devel libjpeg-devel giflib-devel libpng-devel libwebp-devel ImageMagick-dev">
+<meta property="og:updated_time" content="2016-12-09T09:36:58.779Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ES6-info">
-<meta name="twitter:description" content="使用拓展运算符 … 复制数组123456&quot;use strict&quot;const items = [1,2,3,4]const itemscopy = [...items]console.log(itemscopy); //note out: [ 1, 2, 3, 4 ]itemscopy[0] = 6;console.log(items, itemscopy); //note out: [ 1, 2,">
+<meta name="twitter:title" content="zimg imageserver">
+<meta name="twitter:description" content="介绍zimg是@招牌疯子开源的一个图片存储程序，主要的优点是可以根据请求实时处理图片，并且进行压缩和存储，一是方便前端用户，二来降低流量。
+安装安装依赖1$ sudo yum install openssl-devel cmake libevent-devel libjpeg-devel giflib-devel libpng-devel libwebp-devel ImageMagick-dev">
 
 
 
@@ -123,13 +126,13 @@
 
 
 
-  <link rel="canonical" href="http://www.lvphp.com/2016/12/02/es6-info/"/>
+  <link rel="canonical" href="http://www.lvphp.com/2016/12/09/zimg-imgserver/"/>
 
 
 
 
 
-  <title> ES6-info | LVPHP </title>
+  <title> zimg imageserver | LVPHP </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -250,7 +253,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://www.lvphp.com/2016/12/02/es6-info/">
+  <link itemprop="mainEntityOfPage" href="http://www.lvphp.com/2016/12/09/zimg-imgserver/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="lvphpwb">
@@ -274,7 +277,7 @@
             
             
               
-                ES6-info
+                zimg imageserver
               
             
           </h1>
@@ -287,8 +290,8 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-12-02T18:15:38+08:00">
-                2016-12-02
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-12-09T17:15:21+08:00">
+                2016-12-09
               </time>
             
 
@@ -303,8 +306,8 @@
             
               <span class="post-comments-count">
                 <span class="post-meta-divider">|</span>
-                <a href="/2016/12/02/es6-info/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/02/es6-info/" itemprop="commentCount"></span>
+                <a href="/2016/12/09/zimg-imgserver/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/09/zimg-imgserver/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -330,13 +333,22 @@
       
 
       
-        <h4 id="使用拓展运算符-…-复制数组"><a href="#使用拓展运算符-…-复制数组" class="headerlink" title="使用拓展运算符 … 复制数组"></a>使用拓展运算符 … 复制数组</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="meta">"use strict"</span></div><div class="line"><span class="keyword">const</span> items = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>]</div><div class="line"><span class="keyword">const</span> itemscopy = [...items]</div><div class="line"><span class="built_in">console</span>.log(itemscopy); <span class="comment">//note out: [ 1, 2, 3, 4 ]</span></div><div class="line">itemscopy[<span class="number">0</span>] = <span class="number">6</span>;</div><div class="line"><span class="built_in">console</span>.log(items, itemscopy); <span class="comment">//note out: [ 1, 2, 3, 4 ] [ 6, 2, 3, 4 ]</span></div></pre></td></tr></table></figure>
-<h4 id="使用解构存取和使用多属性对象"><a href="#使用解构存取和使用多属性对象" class="headerlink" title="使用解构存取和使用多属性对象"></a>使用解构存取和使用多属性对象</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="meta">"use strict"</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">getFullName</span>(<span class="params">obj</span>) </span>&#123;</div><div class="line">    <span class="keyword">const</span> &#123; firstName, lastName &#125; = obj;</div><div class="line">    <span class="keyword">return</span> <span class="string">`<span class="subst">$&#123;firstName&#125;</span> <span class="subst">$&#123;lastName&#125;</span>`</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">let</span> str = getFullName(&#123;<span class="attr">firstName</span>:<span class="string">"wangbo"</span>, <span class="attr">lastName</span>:<span class="string">"bo"</span>, <span class="attr">age</span>:<span class="number">30</span>&#125;);</div><div class="line"><span class="built_in">console</span>.log(str); <span class="comment">//note out: wangbo bo</span></div></pre></td></tr></table></figure>
-<h4 id="对数组使用解构赋值"><a href="#对数组使用解构赋值" class="headerlink" title="对数组使用解构赋值"></a>对数组使用解构赋值</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">"use strict"</span></div><div class="line"><span class="keyword">const</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>];</div><div class="line"><span class="keyword">const</span> [first, second] = arr;</div><div class="line"><span class="built_in">console</span>.log(first, second); <span class="comment">//note out: 1 2</span></div></pre></td></tr></table></figure>
-<h4 id="需要回传多个值时，使用对象解构，而不是数组解构"><a href="#需要回传多个值时，使用对象解构，而不是数组解构" class="headerlink" title="需要回传多个值时，使用对象解构，而不是数组解构"></a>需要回传多个值时，使用对象解构，而不是数组解构</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="meta">"use strict"</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">processInput</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> &#123;<span class="attr">left</span>: <span class="number">10</span>, <span class="attr">right</span>: <span class="number">20</span>, <span class="attr">top</span>: <span class="number">30</span>, <span class="attr">bottom</span>: <span class="number">40</span>&#125;;</div><div class="line">&#125;</div><div class="line"><span class="keyword">const</span> &#123; top, left &#125; = processInput();</div><div class="line"><span class="built_in">console</span>.log(top, left); <span class="comment">//note out: 30 10</span></div></pre></td></tr></table></figure>
-<h4 id="程序化生成字符串时，使用模板字符串代替字符串连接"><a href="#程序化生成字符串时，使用模板字符串代替字符串连接" class="headerlink" title="程序化生成字符串时，使用模板字符串代替字符串连接"></a>程序化生成字符串时，使用模板字符串代替字符串连接</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="meta">"use strict"</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">sayHi</span>(<span class="params">name</span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> <span class="string">`How are you, <span class="subst">$&#123;name&#125;</span>?`</span>;</div><div class="line">&#125;</div><div class="line"><span class="keyword">const</span> str = sayHi(<span class="string">"wangbo"</span>);</div><div class="line"><span class="built_in">console</span>.log(str); <span class="comment">//note out: How are you, wangbo?</span></div></pre></td></tr></table></figure>
-<h4 id="函数的参数指定默认值"><a href="#函数的参数指定默认值" class="headerlink" title="函数的参数指定默认值"></a>函数的参数指定默认值</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">"use strict"</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">handleThings</span>(<span class="params">opts = &#123;&#125;</span>) </span>&#123;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h4 id="使用箭头函数符号"><a href="#使用箭头函数符号" class="headerlink" title="使用箭头函数符号"></a>使用箭头函数符号</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="meta">"use strict"</span></div><div class="line"><span class="keyword">const</span> items = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>];</div><div class="line"><span class="keyword">let</span> tmp = items.map(<span class="function">(<span class="params">x</span>)=&gt;</span>&#123;<span class="keyword">return</span> x*x;&#125;);</div><div class="line"><span class="built_in">console</span>.log(tmp); <span class="comment">//note out: [ 1, 4, 9, 16 ]</span></div><div class="line"><span class="keyword">let</span> arr = items.map(<span class="function"><span class="params">x</span> =&gt;</span> x * x);</div><div class="line"><span class="built_in">console</span>.log(arr); <span class="comment">//note out: [ 1, 4, 9, 16 ]</span></div></pre></td></tr></table></figure>
+        <h4 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h4><p>zimg是<a href="http://blog.buaa.us/" target="_blank" rel="external">@招牌疯子</a>开源的一个图片存储程序，主要的优点是可以根据请求实时处理图片，并且进行压缩和存储，一是方便前端用户，二来降低流量。</p>
+<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><h5 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a>安装依赖</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo yum install openssl-devel cmake libevent-devel libjpeg-devel giflib-devel libpng-devel libwebp-devel ImageMagick-devel libmemcached-devel</div></pre></td></tr></table></figure>
+<h4 id="安装zimg"><a href="#安装zimg" class="headerlink" title="安装zimg"></a>安装zimg</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$ git <span class="built_in">clone</span> https://github.com/buaazp/zimg -b master --depth=1</div><div class="line">$ <span class="built_in">cd</span> zimg</div><div class="line">$ make</div><div class="line">$ <span class="built_in">cd</span> bin</div><div class="line">$ ./zimg conf/zimg.lua</div></pre></td></tr></table></figure>
+<h4 id="zimg配置文件"><a href="#zimg配置文件" class="headerlink" title="zimg配置文件"></a>zimg配置文件</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">--zimg server config</div><div class="line"></div><div class="line">--server config</div><div class="line">--是否后台运行</div><div class="line">is_daemon	= 1</div><div class="line">--绑定IP</div><div class="line">ip              = <span class="string">'0.0.0.0'</span></div><div class="line">--端口</div><div class="line">port            = 4869</div><div class="line">--运行线程数，默认值为服务器CPU数</div><div class="line">--thread_num    = 4</div><div class="line">backlog_num     = 1024</div><div class="line">max_keepalives  = 1</div><div class="line">retry           = 3</div><div class="line">system          = io.popen(<span class="string">'uname -sn'</span>):<span class="built_in">read</span>(<span class="string">'*l'</span>)</div><div class="line"><span class="built_in">pwd</span>             = io.popen(<span class="string">'pwd'</span>):<span class="built_in">read</span>(<span class="string">'*l'</span>)</div><div class="line"></div><div class="line">--header config</div><div class="line">--返回时所带的HTTP header</div><div class="line">headers         = <span class="string">'Cache-Control:max-age=7776000'</span></div><div class="line">--是否启用etag缓存</div><div class="line">etag            = 1</div></pre></td></tr></table></figure>
+<p>默认使用4869端口，打开地址<code>http://{ip}:4869/</code>就可以上传图片了</p>
+<h4 id="图片自定义处理"><a href="#图片自定义处理" class="headerlink" title="图片自定义处理"></a>图片自定义处理</h4><p><code>http://demo.buaa.us/5f189d8ec57f5a5a0d3dcba47fa797e2?w=500&amp;h=500&amp;g=0&amp;x=0&amp;y=0&amp;r=45&amp;q=75&amp;f=jpeg</code><br><strong>说明</strong></p>
+<ul>
+<li>w:图片宽度</li>
+<li>h:图片高度</li>
+<li>g:g=1为转黑白色</li>
+<li>x:裁剪的开始位置X坐标</li>
+<li>y:裁剪的开始位置Y坐标</li>
+<li>r:旋转角度</li>
+<li>q:图片质量</li>
+<li>f:输出格式</li>
+</ul>
 
       
     </div>
@@ -360,9 +372,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/js/" rel="tag"># js</a>
+            <a href="/tags/zimg/" rel="tag"># zimg</a>
           
-            <a href="/tags/es6/" rel="tag"># es6</a>
+            <a href="/tags/图片存储/" rel="tag"># 图片存储</a>
           
         </div>
       
@@ -371,8 +383,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/12/02/git-stash/" rel="next" title="git-stash">
-                <i class="fa fa-chevron-left"></i> git-stash
+              <a href="/2016/12/09/php-trie-filter/" rel="next" title="使用php扩展trie_filter，利用词库，过滤敏感词">
+                <i class="fa fa-chevron-left"></i> 使用php扩展trie_filter，利用词库，过滤敏感词
               </a>
             
           </div>
@@ -380,10 +392,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/12/03/weixin-sdk/" rel="prev" title="微信JS SDK">
-                微信JS SDK <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -409,8 +417,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/12/02/es6-info/"
-           data-title="ES6-info" data-url="http://www.lvphp.com/2016/12/02/es6-info/">
+      <div class="ds-thread" data-thread-key="2016/12/09/zimg-imgserver/"
+           data-title="zimg imageserver" data-url="http://www.lvphp.com/2016/12/09/zimg-imgserver/">
       </div>
     
   </div>
@@ -536,7 +544,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#使用拓展运算符-…-复制数组"><span class="nav-number">1.</span> <span class="nav-text">使用拓展运算符 … 复制数组</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#使用解构存取和使用多属性对象"><span class="nav-number">2.</span> <span class="nav-text">使用解构存取和使用多属性对象</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#对数组使用解构赋值"><span class="nav-number">3.</span> <span class="nav-text">对数组使用解构赋值</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#需要回传多个值时，使用对象解构，而不是数组解构"><span class="nav-number">4.</span> <span class="nav-text">需要回传多个值时，使用对象解构，而不是数组解构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#程序化生成字符串时，使用模板字符串代替字符串连接"><span class="nav-number">5.</span> <span class="nav-text">程序化生成字符串时，使用模板字符串代替字符串连接</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#函数的参数指定默认值"><span class="nav-number">6.</span> <span class="nav-text">函数的参数指定默认值</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#使用箭头函数符号"><span class="nav-number">7.</span> <span class="nav-text">使用箭头函数符号</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#介绍"><span class="nav-number">1.</span> <span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装"><span class="nav-number">2.</span> <span class="nav-text">安装</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#安装依赖"><span class="nav-number">2.1.</span> <span class="nav-text">安装依赖</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装zimg"><span class="nav-number">3.</span> <span class="nav-text">安装zimg</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#zimg配置文件"><span class="nav-number">4.</span> <span class="nav-text">zimg配置文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#图片自定义处理"><span class="nav-number">5.</span> <span class="nav-text">图片自定义处理</span></a></li></ol></div>
             
 
           </div>
